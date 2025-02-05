@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Tesla Tribute</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 10px;
+            margin-left: 0px;
+        }
+        .image-grid img {
+            width: 200%;
+            height: 80%;
+            border-radius: 5px;
+        }
+        body {
+            background-image: url("images/P1.jpeg");
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents tiling */
+        }       
+        .image {
+            display: inline-block; /* Ensures it responds to transform */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+        }
+
+        .image:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nikola Tesla</h1>
+        <p>The Man Who Lit the World</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="nav-link">
+                
+                    <span class="text">Home</span>
+                    <span class="underline"></span>
+                </a>
+            </li>
+            <li>
+                <a href="biography.html" class="nav-link">
+                    <span class="text">Biography</span>
+                    <span class="underline"></span>
+                </a>
+            </li>
+            <li>
+                <a href="inventions.html" class="nav-link">
+                    <span class="text">Inventions</span>
+                    <span class="underline"></span>
+                </a>
+            </li>
+            <li>
+                <a href="legacy.html" class="nav-link">
+                    <span class="text">Legacy</span>
+                    <span class="underline"></span>
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html" class="nav-link">
+                    <span class="text">Memories</span>
+                    <span class="underline"></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+    <section>
+        <h2 style="color: azure;">Image Gallery</h2>
+        <div class="image-grid">
+            <div class="image">
+            <img src="images/Photo2.png" style="border-color: blue;" alt="Tesla in his laboratory" >
+            </div>
+            <div class="image">
+            <img src="images/Photo3.png" alt="Tesla's Wardenclyffe Tower">
+            </div>
+            <div class="image">
+            <img src="images/Photo4.png" alt="Tesla with his coil">
+            </div>
+            <div class="image">
+            <img src="images/Photo1.png" alt="Tesla's inventions">
+            </div>
+            <div class="image">
+            <img src="images/Photo5.png" alt="Tesla demonstrating wireless energy">
+            </div>
+            <div class="image">
+            <img src="images/Photo6.png" alt="Tesla's experiments">
+            </div>
+        
+            <br><br>
+        </div>
+    </section>
+</div>
+    </main>
+    <br><br><br>
+    <footer>
+        <p> 2025 Nikola Tesla Tribute.</p>
+    </footer>
+</body>
+</html>
